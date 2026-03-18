@@ -1,0 +1,151 @@
+/* BASE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0e0f12;
+  color: #e5e7eb;
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(14,15,18,0.8);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #38bdf8;
+}
+
+header nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+header nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+
+#hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#hero .hero-text h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+}
+
+#hero .hero-text p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 26px;
+  background: #38bdf8;
+  color: #0e0f12;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #81aefb;
+}
+
+/* SECTION */
+
+.section {
+  width: 90%;
+  max-width: 900px;
+  margin: 100px auto;
+}
+
+.section h2 {
+  margin-bottom: 18px;
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+/* PROJECT GRID */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1a1b1f;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #2b2e34;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+/* SKILLS */
+
+.tags span {
+  margin: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #38bdf8;
+  color: #0e0f12;
+  font-weight: 500;
+}
+
+/* LINKS */
+
+a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+a:hover {
+  color: #81aefb;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 35px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
